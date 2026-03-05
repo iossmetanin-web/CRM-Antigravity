@@ -34,13 +34,13 @@ export default function LoginPage() {
                         <Briefcase className="h-8 w-8" />
                     </div>
                     <h1 className="text-3xl font-bold tracking-tight text-gray-900">CRM OS</h1>
-                    <p className="text-sm text-gray-500 mt-2">Sign in to manage your topics and tasks.</p>
+                    <p className="text-sm text-gray-500 mt-2">Войдите, чтобы управлять вашими топиками и задачами.</p>
                 </div>
 
                 <Card className="shadow-xl shadow-gray-200/50">
                     <CardHeader>
-                        <CardTitle>Welcome back</CardTitle>
-                        <CardDescription>Enter your credentials to access your account.</CardDescription>
+                        <CardTitle>С возвращением</CardTitle>
+                        <CardDescription>Введите ваши данные для доступа к аккаунту.</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <form onSubmit={handleLogin} className="flex flex-col gap-4">
@@ -51,20 +51,20 @@ export default function LoginPage() {
                             )}
 
                             <div className="flex flex-col gap-1.5">
-                                <label className="text-sm font-medium text-gray-700">Email or Login</label>
+                                <label className="text-sm font-medium text-gray-700">Email или Логин</label>
                                 <Input type="text" placeholder="admin@crm.local" defaultValue="admin" required />
                             </div>
 
                             <div className="flex flex-col gap-1.5">
                                 <div className="flex items-center justify-between">
-                                    <label className="text-sm font-medium text-gray-700">Password</label>
-                                    <a href="#" className="text-xs text-primary hover:underline">Forgot password?</a>
+                                    <label className="text-sm font-medium text-gray-700">Пароль</label>
+                                    <a href="#" className="text-xs text-primary hover:underline">Забыли пароль?</a>
                                 </div>
                                 <Input type="password" placeholder="••••••••" defaultValue="password" required />
                             </div>
 
                             <Button type="submit" className="mt-2 w-full rounded-xl" disabled={loading}>
-                                {loading ? "Signing in..." : "Sign In"}
+                                {loading ? "Вход..." : "Войти"}
                             </Button>
                         </form>
                     </CardContent>

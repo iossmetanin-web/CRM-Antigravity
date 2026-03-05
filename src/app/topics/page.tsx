@@ -5,9 +5,9 @@ import { Plus, Briefcase, ChevronRight } from "lucide-react"
 import Link from "next/link"
 
 const mockTopics = [
-    { id: "t1", title: "Copper LME China", status: "negotiation", type: "trading", volume: "24,000 tons", created_at: "2 days ago" },
-    { id: "t2", title: "Transformer Sales", status: "execution", type: "trading", volume: "$1.2M", created_at: "1 week ago" },
-    { id: "t3", title: "Mediation Deals", status: "idea", type: "mediation", volume: "TBD", created_at: "Today" },
+    { id: "t1", title: "Медь LME Китай", status: "переговоры", type: "торговля", volume: "24,000 тонн", created_at: "2 дня назад" },
+    { id: "t2", title: "Продажа трансформаторов", status: "исполнение", type: "торговля", volume: "$1.2M", created_at: "1 неделю назад" },
+    { id: "t3", title: "Медиативные сделки", status: "идея", type: "медиация", volume: "TBD", created_at: "Сегодня" },
 ]
 
 export default function TopicsPage() {
@@ -15,12 +15,12 @@ export default function TopicsPage() {
         <div className="flex flex-col gap-6 p-6 md:p-10">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                    <h1 className="text-3xl font-bold tracking-tight text-gray-900">Topics</h1>
-                    <p className="text-gray-500">Manage your active deals, projects, and trading directions.</p>
+                    <h1 className="text-3xl font-bold tracking-tight text-gray-900">Топики</h1>
+                    <p className="text-gray-500">Управляйте вашими активными сделками, проектами и торговыми направлениями.</p>
                 </div>
                 <Button className="gap-2 self-start sm:self-auto rounded-full">
                     <Plus className="h-4 w-4" />
-                    New Topic
+                    Новый Топик
                 </Button>
             </div>
 

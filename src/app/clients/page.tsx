@@ -16,27 +16,27 @@ export default function ClientsPage() {
         <div className="flex flex-col gap-6 p-6 md:p-10">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                    <h1 className="text-3xl font-bold tracking-tight text-gray-900">Clients</h1>
-                    <p className="text-gray-500">Manage client database, contacts, and imported Excel data.</p>
+                    <h1 className="text-3xl font-bold tracking-tight text-gray-900">Клиенты</h1>
+                    <p className="text-gray-500">Управляйте базой клиентов, контактами и импортированными данными Excel.</p>
                 </div>
                 <div className="flex gap-2 items-center self-start sm:self-auto">
                     <label className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-100 cursor-pointer transition-colors hidden sm:flex">
                         <Upload className="h-4 w-4" />
-                        Import Excel
+                        Импорт Excel
                         <input
                             type="file"
                             accept=".xlsx, .xls"
                             className="hidden"
                             onChange={(e) => {
                                 if (e.target.files?.length) {
-                                    alert(`Importing ${e.target.files[0].name}... Database synced!`);
+                                    alert(`Импортируем ${e.target.files[0].name}... База синхронизирована!`);
                                 }
                             }}
                         />
                     </label>
                     <Button className="gap-2 rounded-full">
                         <Plus className="h-4 w-4" />
-                        Add Client
+                        Добавить клиента
                     </Button>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default function ClientsPage() {
                 <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
                 <input
                     type="text"
-                    placeholder="Search by company, INN or phone..."
+                    placeholder="Поиск по компании, ИНН или телефону..."
                     className="h-12 w-full rounded-2xl border border-gray-200 bg-white pl-10 pr-4 outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                 />
             </div>

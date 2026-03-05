@@ -9,12 +9,12 @@ export function BottomNav() {
     const pathname = usePathname()
 
     const links = [
-        { href: "/", label: "Home", icon: Home },
-        { href: "/topics", label: "Topics", icon: Briefcase },
-        { href: "/tasks", label: "Tasks", icon: CheckSquare },
-        { href: "/clients", label: "Clients", icon: Users },
-        { href: "/chats", label: "Chats", icon: MessageSquare },
-        { href: "/analytics", label: "Analytics", icon: TrendingUp },
+        { href: "/", label: "Главная", icon: Home },
+        { href: "/topics", label: "Топики", icon: Briefcase },
+        { href: "/tasks", label: "Задачи", icon: CheckSquare },
+        { href: "/clients", label: "Клиенты", icon: Users },
+        { href: "/chats", label: "Чаты", icon: MessageSquare },
+        { href: "/analytics", label: "Аналитика", icon: TrendingUp },
     ]
 
     return (

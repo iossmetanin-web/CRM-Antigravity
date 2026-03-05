@@ -9,12 +9,12 @@ export function Sidebar() {
     const pathname = usePathname()
 
     const links = [
-        { href: "/", label: "Home", icon: Home },
-        { href: "/topics", label: "Topics", icon: Briefcase },
-        { href: "/tasks", label: "Tasks", icon: CheckSquare },
-        { href: "/clients", label: "Clients", icon: Users },
-        { href: "/chats", label: "Chats", icon: MessageSquare },
-        { href: "/analytics", label: "Analytics", icon: TrendingUp },
+        { href: "/", label: "Главная", icon: Home },
+        { href: "/topics", label: "Топики", icon: Briefcase },
+        { href: "/tasks", label: "Задачи", icon: CheckSquare },
+        { href: "/clients", label: "Клиенты", icon: Users },
+        { href: "/chats", label: "Чаты", icon: MessageSquare },
+        { href: "/analytics", label: "Аналитика", icon: TrendingUp },
     ]
 
     return (
@@ -53,10 +53,11 @@ export function Sidebar() {
                     >
                         <Settings className="h-5 w-5" />
                         Settings
+                        Настройки
                     </Link>
                     <button className="flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-red-50 hover:text-red-600">
                         <LogOut className="h-5 w-5" />
-                        Logout
+                        Выход
                     </button>
                 </nav>
             </div>

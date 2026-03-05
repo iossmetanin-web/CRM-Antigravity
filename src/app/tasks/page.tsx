@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button"
 import { Plus, CheckCircle2, Clock, AlertCircle } from "lucide-react"
 
 const mockTasks = [
-    { id: "1", title: "Finalize Copper Contract", topic: "Copper LME China", deadline: "Yesterday", status: "overdue", priority: "high" },
-    { id: "2", title: "Call Logistics for pricing", topic: "Transformer Sales", deadline: "Today 16:00", status: "in_progress", priority: "medium" },
-    { id: "3", title: "Review Q3 Report", topic: "Internal", deadline: "Today 18:00", status: "new", priority: "low" },
-    { id: "4", title: "Draft Mediation Terms", topic: "Mediation Deals", deadline: "Tomorrow", status: "new", priority: "high" },
+    { id: "1", title: "Завершить контракт по меди", topic: "Медь LME Китай", deadline: "Вчера", status: "просрочено", priority: "высокий" },
+    { id: "2", title: "Позвонить логистам по ценам", topic: "Продажа трансформаторов", deadline: "Сегодня 16:00", status: "в_процессе", priority: "средний" },
+    { id: "3", title: "Обзор отчета за 3 квартал", topic: "Внутренний", deadline: "Сегодня 18:00", status: "новая", priority: "низкий" },
+    { id: "4", title: "Подготовить условия медиации", topic: "Медиативные сделки", deadline: "Завтра", status: "новая", priority: "высокий" },
 ]
 
 export default function TasksPage() {
@@ -17,20 +17,20 @@ export default function TasksPage() {
         <div className="flex flex-col gap-6 p-6 md:p-10">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                    <h1 className="text-3xl font-bold tracking-tight text-gray-900">Tasks</h1>
-                    <p className="text-gray-500">Track deadlines, assignments, and follow up.</p>
+                    <h1 className="text-3xl font-bold tracking-tight text-gray-900">Задачи</h1>
+                    <p className="text-gray-500">Отслеживайте дедлайны, назначения и результаты.</p>
                 </div>
                 <Button className="gap-2 sm:self-auto self-start rounded-full">
                     <Plus className="h-4 w-4" />
-                    New Task
+                    Новая задача
                 </Button>
             </div>
 
             <div className="flex gap-2 pb-2 overflow-x-auto">
-                <Badge variant="default" className="px-4 py-1.5 cursor-pointer text-sm rounded-full">All Tasks</Badge>
-                <Badge variant="outline" className="px-4 py-1.5 cursor-pointer text-sm rounded-full bg-white">My Tasks</Badge>
-                <Badge variant="outline" className="px-4 py-1.5 cursor-pointer text-sm rounded-full text-red-600 bg-red-50 border-red-200">Overdue</Badge>
-                <Badge variant="outline" className="px-4 py-1.5 cursor-pointer text-sm rounded-full bg-white">Completed</Badge>
+                <Badge variant="default" className="px-4 py-1.5 cursor-pointer text-sm rounded-full">Все задачи</Badge>
+                <Badge variant="outline" className="px-4 py-1.5 cursor-pointer text-sm rounded-full bg-white">Мои задачи</Badge>
+                <Badge variant="outline" className="px-4 py-1.5 cursor-pointer text-sm rounded-full text-red-600 bg-red-50 border-red-200">Просрочено</Badge>
+                <Badge variant="outline" className="px-4 py-1.5 cursor-pointer text-sm rounded-full bg-white">Выполнено</Badge>
             </div>
 
             <div className="flex flex-col gap-3">
@@ -57,7 +57,7 @@ export default function TasksPage() {
                             {task.status === 'overdue' && (
                                 <Badge variant="destructive" className="flex items-center gap-1">
                                     <AlertCircle className="h-3 w-3" />
-                                    Overdue
+                                    Просрочено
                                 </Badge>
                             )}
                             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-xs font-medium">

@@ -18,8 +18,8 @@ export default function AnalyticsPage() {
         <div className="flex flex-col gap-6 p-6 md:p-10">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                    <h1 className="text-3xl font-bold tracking-tight text-gray-900">Analytics</h1>
-                    <p className="text-gray-500">Monitor team discipline and performance metrics.</p>
+                    <h1 className="text-3xl font-bold tracking-tight text-gray-900">Аналитика</h1>
+                    <p className="text-gray-500">Мониторинг дисциплины команды и показателей эффективности.</p>
                 </div>
             </div>
 
@@ -27,7 +27,7 @@ export default function AnalyticsPage() {
                 <Card className="bg-gradient-to-br from-blue-50 to-white">
                     <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-2">
-                            <p className="text-sm font-medium text-blue-600">Total Tasks</p>
+                            <p className="text-sm font-medium text-blue-600">Всего задач</p>
                             <TrendingUp className="h-4 w-4 text-blue-600" />
                         </div>
                         <p className="text-3xl font-bold">287</p>
@@ -37,7 +37,7 @@ export default function AnalyticsPage() {
                 <Card className="bg-gradient-to-br from-green-50 to-white">
                     <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-2">
-                            <p className="text-sm font-medium text-green-600">Completed</p>
+                            <p className="text-sm font-medium text-green-600">Выполнено</p>
                             <CheckCircle2 className="h-4 w-4 text-green-600" />
                         </div>
                         <p className="text-3xl font-bold">234</p>
@@ -47,7 +47,7 @@ export default function AnalyticsPage() {
                 <Card className="bg-gradient-to-br from-red-50 to-white">
                     <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-2">
-                            <p className="text-sm font-medium text-red-600">Overdue Total</p>
+                            <p className="text-sm font-medium text-red-600">Всего просрочено</p>
                             <AlertCircle className="h-4 w-4 text-red-600" />
                         </div>
                         <p className="text-3xl font-bold">15</p>
@@ -57,7 +57,7 @@ export default function AnalyticsPage() {
                 <Card className="bg-gradient-to-br from-purple-50 to-white">
                     <CardContent className="p-6">
                         <div className="flex items-center justify-between mb-2">
-                            <p className="text-sm font-medium text-purple-600">Avg. Discipline</p>
+                            <p className="text-sm font-medium text-purple-600">Ср. дисциплина</p>
                             <Award className="h-4 w-4 text-purple-600" />
                         </div>
                         <p className="text-3xl font-bold">75.5%</p>
@@ -65,19 +65,19 @@ export default function AnalyticsPage() {
                 </Card>
             </div>
 
-            <h2 className="text-xl font-bold mt-4">Team Discipline Ranking</h2>
+            <h2 className="text-xl font-bold mt-4">Рейтинг дисциплины команды</h2>
             <Card>
                 <CardContent className="p-0">
                     <div className="w-full overflow-x-auto">
                         <table className="w-full text-sm text-left">
                             <thead className="text-xs text-gray-500 uppercase bg-gray-50 border-b border-gray-100">
                                 <tr>
-                                    <th className="px-6 py-4">Rank</th>
-                                    <th className="px-6 py-4">User</th>
-                                    <th className="px-6 py-4 hidden sm:table-cell">Total Tasks</th>
-                                    <th className="px-6 py-4 hidden sm:table-cell">Completed</th>
-                                    <th className="px-6 py-4">Overdue</th>
-                                    <th className="px-6 py-4">Discipline Index</th>
+                                    <th className="px-6 py-4">Ранг</th>
+                                    <th className="px-6 py-4">Пользователь</th>
+                                    <th className="px-6 py-4 hidden sm:table-cell">Всего задач</th>
+                                    <th className="px-6 py-4 hidden sm:table-cell">Выполнено</th>
+                                    <th className="px-6 py-4">Просрочено</th>
+                                    <th className="px-6 py-4">Индекс дисциплины</th>
                                 </tr>
                             </thead>
                             <tbody>

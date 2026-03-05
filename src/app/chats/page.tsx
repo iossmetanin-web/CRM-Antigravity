@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge"
 import { Send, Hash, Lock, Search } from "lucide-react"
 
 const mockChats = [
-    { id: "1", name: "General", type: "general", lastMessage: "Has anyone seen the contract?", time: "10:42 AM", unread: 0 },
-    { id: "2", name: "Copper LME China", type: "topic", lastMessage: "Admin uploaded final_terms.pdf", time: "Yesterday", unread: 2 },
-    { id: "3", name: "Management", type: "private", lastMessage: "Let's review Q3 numbers", time: "Monday", unread: 0 },
+    { id: "1", name: "Общий", type: "general", lastMessage: "Кто-нибудь видел контракт?", time: "10:42 AM", unread: 0 },
+    { id: "2", name: "Медь LME Китай", type: "topic", lastMessage: "Админ загрузил final_terms.pdf", time: "Вчера", unread: 2 },
+    { id: "3", name: "Менеджмент", type: "private", lastMessage: "Давайте обсудим цифры за 3 квартал", time: "Понедельник", unread: 0 },
 ]
 
 export default function ChatsPage() {
@@ -16,13 +16,13 @@ export default function ChatsPage() {
             {/* Sidebar / Chat List */}
             <div className="w-full md:w-80 flex flex-col border-r border-gray-200 bg-white shrink-0">
                 <div className="p-4 border-b border-gray-100 flex-none text-2xl font-bold tracking-tight text-gray-900">
-                    Chats
+                    Чаты
                 </div>
                 <div className="p-4 border-b border-gray-100 flex-none relative">
                     <Search className="absolute left-7 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                     <input
                         type="text"
-                        placeholder="Search messages..."
+                        placeholder="Поиск сообщений..."
                         className="h-10 w-full rounded-xl bg-gray-50 pl-10 pr-4 text-sm outline-none focus:ring-1 focus:ring-primary"
                     />
                 </div>
@@ -61,8 +61,8 @@ export default function ChatsPage() {
                             <Hash className="h-5 w-5" />
                         </div>
                         <div>
-                            <h3 className="font-bold text-gray-900">Copper LME China</h3>
-                            <p className="text-xs text-gray-500">Topic Chat • 3 participants</p>
+                            <h3 className="font-bold text-gray-900">Медь LME Китай</h3>
+                            <p className="text-xs text-gray-500">Чат топика • 3 участника</p>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ export default function ChatsPage() {
                 {/* Chat Messages */}
                 <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-6">
                     <div className="text-center">
-                        <Badge variant="secondary" className="mx-auto mt-4 font-normal">Yesterday</Badge>
+                        <Badge variant="secondary" className="mx-auto mt-4 font-normal">Вчера</Badge>
                     </div>
 
                     <div className="flex gap-4">
@@ -83,7 +83,7 @@ export default function ChatsPage() {
                                 <span className="text-xs text-gray-400">14:02</span>
                             </div>
                             <div className="rounded-2xl rounded-tl-sm bg-gray-100 p-3 text-sm text-gray-800">
-                                Are we still waiting on the logistics quote?
+                                Мы всё ещё ждем котировку от логистов?
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export default function ChatsPage() {
                                 <span className="font-semibold text-sm">Admin (You)</span>
                             </div>
                             <div className="rounded-2xl rounded-tr-sm bg-primary p-3 text-sm text-white">
-                                Yes, should have it by EOD today.
+                                Да, должны получить к концу сегодняшнего дня.
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ export default function ChatsPage() {
                     <div className="relative flex items-center">
                         <input
                             type="text"
-                            placeholder="Type your message..."
+                            placeholder="Введите сообщение..."
                             className="w-full rounded-full border border-gray-200 bg-gray-50 py-3 pl-4 pr-12 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                         />
                         <button className="absolute right-2 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white transition-transform hover:scale-105">
